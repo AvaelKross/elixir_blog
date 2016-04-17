@@ -1,0 +1,86 @@
+
+=====
+===== LOGGING STARTED Sun Apr 17 13:34:58 EDT 2016
+=====
+Exec: /home/apps/elixir_blog/rel/blog_phoenix/erts-7.3/bin/erlexec -boot /home/apps/elixir_blog/rel/blog_phoenix/releases/0.0.1/blog_phoenix -mode embedded -config /home/apps/elixir_blog/rel/blog_phoenix/running-config/sys.config -boot_var ERTS_LIB_DIR /home/apps/elixir_blog/rel/blog_phoenix/erts-7.3/../lib -env ERL_LIBS /home/apps/elixir_blog/rel/blog_phoenix/lib -pa /home/apps/elixir_blog/rel/blog_phoenix/lib/blog_phoenix-0.0.1/consolidated -args_file /home/apps/elixir_blog/rel/blog_phoenix/running-config/vm.args -user Elixir.IEx.CLI -extra --no-halt +iex -- console
+Root: /home/apps/elixir_blog/rel/blog_phoenix
+/home/apps/elixir_blog/rel/blog_phoenix
+Erlang/OTP 18 [erts-7.3] [source-d2a6d81] [async-threads:10] [hipe] [kernel-poll:false]
+
+13:35:00.190 [error] backend port not found: :inotifywait
+
+13:35:00.193 [info] Running BlogPhoenix.Endpoint with Cowboy using http on port 8888
+13:35:00.193 [error] Could not find static manifest at "/home/apps/elixir_blog/rel/blog_phoenix/lib/blog_phoenix-0.0.1/priv/static/manifest.json". Run "mix phoenix.digest" after building your static files or remove the configuration from "config/prod.exs."
+Interactive Elixir (1.2.4) - press Ctrl+C to exit (type h() ENTER for help)
+iex(blog_phoenix@siemenscollection)1> 13:35:02.292 request_id=unqui9p2022ir80fl9160ta950mse002 [info] GET /httptest.php
+13:35:02.293 request_id=unqui9p2022ir80fl9160ta950mse002 [info] Sent 404 in 191µs
+13:35:04.284 request_id=kfmc9hp4k35dkdooau011pt3l5qpog6h [info] GET /
+13:35:04.296 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:35:04.296 request_id=kfmc9hp4k35dkdooau011pt3l5qpog6h [info] Sent 500 in 12ms 
+13:35:04.298 [error] #PID<0.1416.0> running BlogPhoenix.Endpoint terminated
+Server: avael.name:80 (http)
+Request: GET /
+** (exit) an exception was raised:
+    ** (DBConnection.Error) connection not available
+        (db_connection) lib/db_connection.ex:817: DBConnection.checkout/2
+        (db_connection) lib/db_connection.ex:717: DBConnection.run/3
+        (db_connection) lib/db_connection.ex:957: DBConnection.run_meter/3
+        (db_connection) lib/db_connection.ex:421: DBConnection.query/4
+        (postgrex) lib/postgrex.ex:111: Postgrex.query/4
+        (ecto) lib/ecto/adapters/postgres/connection.ex:31: Ecto.Adapters.Postgres.Connection.query/4
+        (stdlib) timer.erl:197: :timer.tc/3
+        (ecto) lib/ecto/adapters/sql.ex:262: Ecto.Adapters.SQL.query/7
+13:35:04.627 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:35:05.183 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:35:06.392 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:35:07.711 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:35:09.530 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:35:12.661 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:35:17.979 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:35:26.177 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:35:35.661 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:35:45.941 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:35:58.383 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:36:12.536 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:36:24.004 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:36:35.844 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:36:48.679 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:36:54.846 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:37:08.851 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:37:15.354 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:37:26.424 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:37:33.260 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:37:41.562 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:37:50.393 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:38:04.568 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:38:14.925 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:38:25.630 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:38:32.934 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:38:47.695 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:38:53.214 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:39:01.431 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:39:13.613 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:39:19.550 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:39:33.393 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:39:48.361 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:39:58.722 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:40:11.417 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:40:26.106 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:40:37.132 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:40:43.214 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:40:48.915 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:40:56.677 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:41:03.735 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:41:14.206 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:41:22.275 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:41:36.047 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:41:43.621 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:41:49.844 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:41:59.000 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:42:13.802 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:42:27.641 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:42:34.530 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:42:48.755 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:43:02.509 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:43:16.492 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"
+13:43:29.830 [error] Postgrex.Protocol (#PID<0.1417.0>) failed to connect: ** (Postgrex.Error) FATAL (invalid_password): password authentication failed for user "postgres"

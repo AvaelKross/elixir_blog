@@ -1,4 +1,4 @@
-/* include/x86_64-apple-darwin15.3.0/erl_native_features_config.h.  Generated from erl_native_features_config.h.in by configure.  */
+/* include/i686-pc-linux-gnu/erl_native_features_config.h.  Generated from erl_native_features_config.h.in by configure.  */
 /*
  * %CopyrightBegin%
  *

@@ -1,4 +1,4 @@
-/* include/x86_64-apple-darwin15.3.0/erl_int_sizes_config.h.  Generated from erl_int_sizes_config.h.in by configure.  */
+/* include/i686-pc-linux-gnu/erl_int_sizes_config.h.  Generated from erl_int_sizes_config.h.in by configure.  */
 /*
  * %CopyrightBegin%
  *
@@ -29,13 +29,13 @@
 #define SIZEOF_INT 4
 
 /* The number of bytes in a long.  */
-#define SIZEOF_LONG 8
+#define SIZEOF_LONG 4
 
 /* The number of bytes in a long long.  */
 #define SIZEOF_LONG_LONG 8
 
 /* The size of a pointer. */
-#define SIZEOF_VOID_P 8
+#define SIZEOF_VOID_P 4
 
 /* Define if building a halfword-heap 64bit emulator (needed for NIF's) */
 /* #undef HALFWORD_HEAP_EMULATOR */

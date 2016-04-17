@@ -25,14 +25,14 @@
 ETHR_LIB_NAME=ethread
 
 # Command-line defines to use when compiling
-ETHR_DEFS=-DUSE_THREADS  -D_THREAD_SAFE -D_REENTRANT -DPOSIX_THREADS
+ETHR_DEFS=-DUSE_THREADS  -D_THREAD_SAFE -D_REENTRANT -DPOSIX_THREADS -D_POSIX_THREAD_SAFE_FUNCTIONS -D_GNU_SOURCE
 
 # Libraries to link with when linking
-ETHR_LIBS=-lethread -lerts_internal_r -lpthread  
+ETHR_LIBS=-lethread -lerts_internal_r -lpthread  -lrt
 
 # Extra libraries to link with. The same as ETHR_LIBS except that the
 # ethread library itself is not included.
-ETHR_X_LIBS=-lpthread  
+ETHR_X_LIBS=-lpthread  -lrt
 
 # The name of the thread library which the ethread library is based on.
 ETHR_THR_LIB_BASE=pthread

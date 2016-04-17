@@ -1,4 +1,4 @@
-/* include/internal/x86_64-apple-darwin15.3.0/ethread_header_config.h.  Generated from ethread_header_config.h.in by configure.  */
+/* include/internal/i686-pc-linux-gnu/ethread_header_config.h.  Generated from ethread_header_config.h.in by configure.  */
 /*
  * %CopyrightBegin%
  *
@@ -20,13 +20,13 @@
  */
 
 /* Define to the size of pointers */
-#define ETHR_SIZEOF_PTR 8
+#define ETHR_SIZEOF_PTR 4
 
 /* Define to the size of int */
 #define ETHR_SIZEOF_INT 4
 
 /* Define to the size of long */
-#define ETHR_SIZEOF_LONG 8
+#define ETHR_SIZEOF_LONG 4
 
 /* Define to the size of long long */
 #define ETHR_SIZEOF_LONG_LONG 8
@@ -35,7 +35,7 @@
 #define ETHR_SIZEOF___INT64 0
 
 /* Define to the size of __int128_t */
-#define ETHR_SIZEOF___INT128_T 16
+#define ETHR_SIZEOF___INT128_T 0
 
 /* Define if bigendian */
 /* #undef ETHR_BIGENDIAN */
@@ -59,20 +59,20 @@
 /* #undef ETHR_HAVE_MIT_PTHREAD_H */
 
 /* Define if you have the pthread_spin_lock function. */
-/* #undef ETHR_HAVE_PTHREAD_SPIN_LOCK */
+#define ETHR_HAVE_PTHREAD_SPIN_LOCK 1
 
 /* Define if you want to force usage of pthread rwlocks */
 /* #undef ETHR_FORCE_PTHREAD_RWLOCK */
 
 /* Define if you have the pthread_rwlockattr_setkind_np() function. */
-/* #undef ETHR_HAVE_PTHREAD_RWLOCKATTR_SETKIND_NP */
+#define ETHR_HAVE_PTHREAD_RWLOCKATTR_SETKIND_NP 1
 
 /* Define if you have the PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP rwlock
    attribute. */
-/* #undef ETHR_HAVE_PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP */
+#define ETHR_HAVE_PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP 1
 
 /* Define if you have a linux futex implementation. */
-/* #undef ETHR_HAVE_LINUX_FUTEX */
+#define ETHR_HAVE_LINUX_FUTEX 1
 
 /* Define if x86/x86_64 out of order instructions should be synchronized */
 /* #undef ETHR_X86_OUT_OF_ORDER */
@@ -97,19 +97,19 @@
 
 /* Define as a bitmask corresponding to the word sizes that
    __sync_add_and_fetch() can handle on your system */
-#define ETHR_HAVE___sync_add_and_fetch 28
+#define ETHR_HAVE___sync_add_and_fetch 12
 
 /* Define as a bitmask corresponding to the word sizes that
    __sync_fetch_and_and() can handle on your system */
-#define ETHR_HAVE___sync_fetch_and_and 28
+#define ETHR_HAVE___sync_fetch_and_and 12
 
 /* Define as a bitmask corresponding to the word sizes that
    __sync_fetch_and_or() can handle on your system */
-#define ETHR_HAVE___sync_fetch_and_or 28
+#define ETHR_HAVE___sync_fetch_and_or 12
 
 /* Define as a bitmask corresponding to the word sizes that
    __sync_val_compare_and_swap() can handle on your system */
-#define ETHR_HAVE___sync_val_compare_and_swap 28
+#define ETHR_HAVE___sync_val_compare_and_swap 12
 
 /* Define as a boolean indicating whether you have a gcc __atomic builtins or
    not */
@@ -121,27 +121,27 @@
 
 /* Define as a bitmask corresponding to the word sizes that __atomic_store_n()
    can handle on your system */
-#define ETHR_HAVE___atomic_store_n 28
+#define ETHR_HAVE___atomic_store_n 12
 
 /* Define as a bitmask corresponding to the word sizes that __atomic_load_n()
    can handle on your system */
-#define ETHR_HAVE___atomic_load_n 28
+#define ETHR_HAVE___atomic_load_n 12
 
 /* Define as a bitmask corresponding to the word sizes that
    __atomic_add_fetch() can handle on your system */
-#define ETHR_HAVE___atomic_add_fetch 28
+#define ETHR_HAVE___atomic_add_fetch 12
 
 /* Define as a bitmask corresponding to the word sizes that
    __atomic_fetch_and() can handle on your system */
-#define ETHR_HAVE___atomic_fetch_and 28
+#define ETHR_HAVE___atomic_fetch_and 12
 
 /* Define as a bitmask corresponding to the word sizes that
    __atomic_fetch_or() can handle on your system */
-#define ETHR_HAVE___atomic_fetch_or 28
+#define ETHR_HAVE___atomic_fetch_or 12
 
 /* Define as a bitmask corresponding to the word sizes that
    __atomic_compare_exchange_n() can handle on your system */
-#define ETHR_HAVE___atomic_compare_exchange_n 28
+#define ETHR_HAVE___atomic_compare_exchange_n 12
 
 /* Define if you prefer gcc native ethread implementations */
 /* #undef ETHR_PREFER_GCC_NATIVE_IMPLS */
@@ -153,16 +153,16 @@
 #define ETHR_HAVE_SCHED_YIELD 1
 
 /* Define if you have the pthread_yield() function. */
-/* #undef ETHR_HAVE_PTHREAD_YIELD */
+#define ETHR_HAVE_PTHREAD_YIELD 1
 
 /* Define if pthread_yield() returns an int. */
-/* #undef ETHR_PTHREAD_YIELD_RET_INT */
+#define ETHR_PTHREAD_YIELD_RET_INT 1
 
 /* Define if sched_yield() returns an int. */
 #define ETHR_SCHED_YIELD_RET_INT 1
 
 /* Define if you use a gcc that supports -msse2 and understand sse2 specific asm statements */
-/* #undef ETHR_GCC_HAVE_SSE2_ASM_SUPPORT */
+#define ETHR_GCC_HAVE_SSE2_ASM_SUPPORT 1
 
 /* Define if you use a gcc that supports the double word cmpxchg instruction */
 #define ETHR_GCC_HAVE_DW_CMPXCHG_ASM_SUPPORT 1
@@ -175,11 +175,11 @@
 /* #undef ETHR_CMPXCHG8B_REGISTER_SHORTAGE */
 
 /* Define if you have the pthread_rwlockattr_setkind_np() function. */
-/* #undef ETHR_HAVE_PTHREAD_RWLOCKATTR_SETKIND_NP */
+#define ETHR_HAVE_PTHREAD_RWLOCKATTR_SETKIND_NP 1
 
 /* Define if you have the PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP rwlock
    attribute. */
-/* #undef ETHR_HAVE_PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP */
+#define ETHR_HAVE_PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP 1
 
 /* Define if you have gcc atomic operations */
 /* #undef ETHR_HAVE_GCC_ATOMIC_OPS */
@@ -275,16 +275,16 @@
 #define ASSUMED_CACHE_LINE_SIZE 64
 
 /* Define if you have a clock_gettime() with a monotonic clock */
-/* #undef ETHR_HAVE_CLOCK_GETTIME_MONOTONIC */
+#define ETHR_HAVE_CLOCK_GETTIME_MONOTONIC 1
 
 /* Define if you have a monotonic gethrtime() */
 /* #undef ETHR_HAVE_GETHRTIME */
 
 /* Define if you have a mach clock_get_time() with a monotonic clock */
-#define ETHR_HAVE_MACH_CLOCK_GET_TIME 1
+/* #undef ETHR_HAVE_MACH_CLOCK_GET_TIME */
 
 /* Define to the monotonic clock id to use */
-#define ETHR_MONOTONIC_CLOCK_ID SYSTEM_CLOCK
+#define ETHR_MONOTONIC_CLOCK_ID CLOCK_MONOTONIC
 
 /* Define if pthread_cond_timedwait() can be used with a monotonic clock */
-/* #undef ETHR_HAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC */
+#define ETHR_HAVE_PTHREAD_COND_TIMEDWAIT_MONOTONIC 1
