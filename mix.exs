@@ -18,8 +18,8 @@ defmodule BlogPhoenix.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {BlogPhoenix, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext, :neotoma, :conform,
+                    :phoenix_ecto, :postgrex, :phoenix_live_reload, :addict]]
   end
 
   # Specifies which paths to compile per environment.
@@ -37,7 +37,9 @@ defmodule BlogPhoenix.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
-     {:addict, "~> 0.2"}]
+     {:addict, "~> 0.2"},
+     {:conform, "~> 0.17.0"},
+     {:exrm, "~> 1.0.3"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
