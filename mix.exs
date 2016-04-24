@@ -37,7 +37,7 @@ defmodule BlogPhoenix.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
-     {:addict, "~> 0.2"},
+     {:addict, git: "https://github.com/AvaelKross/addict.git"},
      {:conform, "~> 0.17.0"},
      {:exrm, "~> 1.0.3"}]
   end
