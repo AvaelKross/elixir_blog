@@ -1,28 +1,17 @@
-<h2>Listing posts</h2>
+<%= if is_logged_in(@conn) do %>
+  <%= link "New post", to: post_path(@conn, :new) %>
+<% end %>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Comments Count</th>
-
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
 <%= for {post, count} <- @posts do %>
-    <tr>
-      <td><%= post.title %></td>
-      <td><%= count %></td>
-
-      <td class="text-right">
-        <%= link "Show", to: post_path(@conn, :show, post), class: "btn btn-default btn-xs" %>
+  <div class="post">
+    <h3><%= link post.title, to: post_path(@conn, :show, post)%></h3>
+    <%= post.body %>
+    <div class="buttons">
+      <%= link "Comments", to: post_path(@conn, :show, post), class: "btn btn-default btn-xs" %>
+      <%= if is_logged_in(@conn) do %>
         <%= link "Edit", to: post_path(@conn, :edit, post), class: "btn btn-default btn-xs" %>
         <%= link "Delete", to: post_path(@conn, :delete, post), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
-      </td>
-    </tr>
+      <% end %>
+    </div>
+  </div>
 <% end %>
-  </tbody>
-</table>
-
-<%= link "New post", to: post_path(@conn, :new) %>

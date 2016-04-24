@@ -17,14 +17,15 @@
         <nav role="navigation">
           <ul class="nav nav-pills pull-right">
             <%= if is_logged_in(@conn) do %>
-              <li><%= current_user(@conn).name %></li>
-              <li>(<span id="btn-logout">Logout</span>)</li>
+              <li><a id="btn-logout"><%= current_user(@conn).name %> / Logout</a></li>
             <% else %>
               <li><a href="/login">Login</a></li>
             <% end %>
           </ul>
         </nav>
-        <span class="logo"></span>
+        <div class="logo">
+          <h1><a href="/">/ avael.name</a></h1>
+        </div>
       </header>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

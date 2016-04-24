@@ -32,7 +32,7 @@ exports.config = {
     stylesheets: {
       joinTo: {
         "css/addict.css": "web/static/css/addict.css",
-        "css/app.css": /^(web\/static\/css)((?!addict.css).)*/,
+        "css/app.css": /^(web\/static\/css)(?!\/addict.css)/,
         "css/vendor.css": /^(web\/static\/vendor)|(deps)|(node_modules\/)/
       }
     },

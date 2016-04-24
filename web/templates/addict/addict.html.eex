@@ -16,6 +16,7 @@
       <input type="hidden" id="csrf-token" value="<%= @csrf_token %>">
 
       <main role="main">
+        <h1 style="text-align: center"><a href="/">avael.name</a></h1>
         <%= render @view_module, @view_template, assigns %>
       </main>
 
