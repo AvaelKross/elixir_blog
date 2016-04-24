@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <title>User Management</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/addict.css") %>">
   </head>
 
   <body>
@@ -20,6 +20,7 @@
       </main>
 
     </div> <!-- /container -->
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="<%= static_path(@conn, "/js/vendor.js") %>"></script>
+    <script src="<%= static_path(@conn, "/js/login.js") %>"></script>
   </body>
 </html>

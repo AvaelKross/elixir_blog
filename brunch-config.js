@@ -2,8 +2,12 @@ exports.config = {
   // See http://brunch.io/#documentation for docs.
   files: {
     javascripts: {
-      joinTo: "js/app.js"
-
+      joinTo: {
+        "js/login.js": /^(web\/static\/js\/((login)|(addict)))/,
+        "js/app.js": /^(web\/static\/js)/,
+        "js/vendor.js": /^(web\/static\/vendor)|(deps)|(node_modules\/)/
+      },
+      // joinTo: "js/app.js",
       // To use a separate vendor.js bundle, specify two files path
       // https://github.com/brunch/brunch/blob/stable/docs/config.md#files
       // joinTo: {
@@ -19,9 +23,18 @@ exports.config = {
       //     "web/static/vendor/js/bootstrap.min.js"
       //   ]
       // }
+      order: {
+        before: [
+          "web/static/vendor/js/jquery.min.js"
+        ]
+      }
     },
     stylesheets: {
-      joinTo: "css/app.css"
+      joinTo: {
+        "css/addict.css": "web/static/css/addict.css",
+        "css/app.css": /^(web\/static\/css)((?!addict.css).)*/,
+        "css/vendor.css": /^(web\/static\/vendor)|(deps)|(node_modules\/)/
+      }
     },
     templates: {
       joinTo: "js/app.js"
@@ -57,7 +70,8 @@ exports.config = {
 
   modules: {
     autoRequire: {
-      "js/app.js": ["web/static/js/app"]
+      "js/app.js": ["web/static/js/app"],
+      "js/login.js": ["web/static/js/login"]
     }
   },
 
